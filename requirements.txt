@@ -2,3 +2,4 @@ Flask
 redis
 supabase
 gunicorn
+requests
