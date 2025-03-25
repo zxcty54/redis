@@ -7,7 +7,7 @@ from flask import Flask, jsonify
 
 # Set up Supabase URL and Key from environment variables
 SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_API_KEY = os.getenv("SUPABASE_API_KEY")
+SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY")
 
 # Set up Redis connection
 REDIS_HOST = os.getenv("REDIS_HOST")
@@ -15,7 +15,7 @@ REDIS_PORT = os.getenv("REDIS_PORT")
 REDIS_PASSWORD = os.getenv("REDIS_PASSWORD")
 
 # Create Supabase client
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_API_KEY)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
 # Set up Redis client
 redis_client = redis.StrictRedis(
