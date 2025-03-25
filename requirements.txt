@@ -1,4 +1,4 @@
 Flask
 redis
-supabase-py
+supabase
 gunicorn
